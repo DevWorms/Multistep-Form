@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Start DevWorms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar navbar-fixed-top header" id="subnav">
+        <div class="col-md-12">
+            <div class="navbar-header">                
+                <img src="img/logo.png">               
+            </div>
+        </div> 
+    </div>
+
+    <!--main-->
+    <div class="container" id="main">
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <!-- **********************  FORM 1  **********************-->
+                <div class="step well">
+                    <h2>Form I</h2>
+                    <br><br>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            Name
+                            <input type="text" id="name" class="form-control">
+                            <br>
+                            
+                            Select
+                            <select id="select" class="form-control">
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                            </select><br>
+                        </div>
+
+                        <div class="col-md-5">
+                            Another Text
+                            <input type="text" id="another" class="form-control"><br>
+                        </div>
+
+                        <div class="col-md-3">
+                            Checkbox 1<input id="check1" type="checkbox" class="form-control"/>
+                            Checkbox 2<input id="check2" type="checkbox" class="form-control"/>
+                            Checkbox 3<input id="check3" type="checkbox" class="form-control"/>
+                            Checkbox 4<input id="check4" type="checkbox" class="form-control"/>
+                        </div>
+                    </div>                    
+                </div> 
+
+                <!-- **********************  FORM 2  **********************-->
+                <div class="step well">
+                        <h2>Form II</h2>
+                        <br><br>
+
+                        <div class="row">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th colspan="2">Colspan A</th>
+                                        <th colspan="2">Colspan C</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Number</th>
+                                        <th>Value</th>
+                                        <th>Times</th>
+                                        <th>Result A</th>
+
+                                        <th>Minus</th>
+                                        <th>Result B</th>
+
+                                        <th>Divided</th>
+                                        <th>Result C</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>  
+                                            <input id="number1" type="text" class="form-control" disabled="disabled" value="1">
+                                            <input id="number2" type="text" class="form-control" disabled="disabled" value="2">
+                                            <input id="number3" type="text" class="form-control" disabled="disabled" value="3">
+                                        </td>
+                                        <td>
+                                            <input id="value1" type="text" class="form-control" disabled="disabled" value="3">
+                                            <input id="value2" type="text" class="form-control" disabled="disabled" value="6">
+                                            <input id="value3" type="text" class="form-control" disabled="disabled" value="9">
+                                        </td>
+                                        <td>
+                                            <input id="times1" type="text" class="form-control" value="">
+                                            <input id="times2" type="text" class="form-control" value="">
+                                            <input id="times3" type="text" class="form-control" value="">
+                                        </td>
+                                        <td>
+                                            <input id="resultA1" type="text" class="form-control" disabled="disabled" value="">
+                                            <input id="resultA2" type="text" class="form-control" disabled="disabled" value="">
+                                            <input id="resultA3" type="text" class="form-control" disabled="disabled" value="">
+                                        </td>
+                                        <td>
+                                            <input id="minus1" type="text" class="form-control" value="">
+                                            <input id="minus2" type="text" class="form-control" value="">
+                                            <input id="minus3" type="text" class="form-control" value="">
+                                        </td>
+                                        <td>
+                                            <input id="resultB1" type="text" class="form-control" disabled="disabled" value="">
+                                            <input id="resultB2" type="text" class="form-control" disabled="disabled" value="">
+                                            <input id="resultB3" type="text" class="form-control" disabled="disabled" value="">
+                                        </td>
+                                        <td>
+                                            <input id="divided1" type="text" class="form-control" value="">
+                                            <input id="divided2" type="text" class="form-control" value="">
+                                            <input id="divided3" type="text" class="form-control" value="">
+                                        </td>
+                                        <td>
+                                            <input id="resultC1" type="text" class="form-control" disabled="disabled" value="">
+                                            <input id="resultC2" type="text" class="form-control" disabled="disabled" value="">
+                                            <input id="resultC3" type="text" class="form-control" disabled="disabled" value="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+                
+                <button class="action back btn btn-info" id="btnBack" style="display:none">Back</button>   
+                <button class="action next btn btn-info" id="btnSiguiente" style="display:none">Next</button>               
+            </div> 
+        </div>
+
+        <!-- **********************  FOOTER  ********************** -->
+        <div class="row">
+            <div class="clearfix"></div>
+                <hr>
+                <div class="col-md-12 text-center">
+                    <p style="color:#545B60">
+                        <a href="http://devworms.com" target="_blank">DevWorms</a>
+                    </p>
+                </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/calculate.js"></script>
+    <script src="js/multistep.js"></script>
+
+</body>
+</html>
